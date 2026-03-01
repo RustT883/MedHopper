@@ -3,7 +3,7 @@
 
 A LangGraph-based agentic RAG system for medical question answering with Chroma vector store and FlashRank reranking. This system implements a multi-hop reasoning approach with entity validation, Orphanet expansion, and configurable ablation studies.
 
-This is a continuation of our initial work on [DecompRAG](https://github.com/RustT883/DecompRAG-BioCreative-IX-MedHopQA-)
+This is a continuation of our initial work on [DecompRAG](https://github.com/RustT883/DecompRAG-BioCreative-IX-MedHopQA-).
 
 ## Features
 
