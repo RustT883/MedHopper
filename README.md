@@ -21,7 +21,7 @@ The system uses a state machine implemented with LangGraph, where each node perf
 
 - **Analysis**: Determines question strategy and expected answer type
 - **Planning**: Creates multi-hop sub-questions
-- **Retrieval**: Fetches documents with MMR and reranking
+- **Retrieval**: Fetches documents
 - **Execution**: Answers sub-questions and locks entities
 - **Validation**: Judges answers against multiple criteria
 - **Repair**: Generates improved queries when validation fails
