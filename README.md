@@ -55,7 +55,7 @@ MAX_REPAIR_STEPS = 3                         # Maximum repair attempts
 ### Process a CSV file
 
 ```bash
-python medhopqa.py --csv MedHopQA_Test_Dataset_matched.csv
+python MedHop_ablate.py --csv MedHopQA_Test_Dataset_matched.csv
 ```
 
 Input CSV must have columns: `QIDX`, `Question`
@@ -63,13 +63,13 @@ Input CSV must have columns: `QIDX`, `Question`
 ### Ask a single question
 
 ```bash
-python medhopqa.py --question "What gene is associated with Gorlin syndrome?"
+python MedHop_ablate.py --question "What gene is associated with Gorlin syndrome?"
 ```
 
 ### Run ablation studies
 
 ```bash
-python medhopqa.py --csv questions.csv --ablations --seeds 42,43,44,45,46 --long_answers
+python MedHop_ablate.py --csv questions.csv --ablations --seeds 42,43,44,45,46 --long_answers
 ```
 
 This generates separate CSV outputs for each ablation configuration with different seeds.
@@ -77,7 +77,7 @@ This generates separate CSV outputs for each ablation configuration with differe
 ### Enable long answers with Wikipedia links
 
 ```bash
-python medhopqa.py --csv questions.csv --long_answers
+python MedHop_ablate.py --csv questions.csv --long_answers
 ```
 
 ## Orphanet Integration
