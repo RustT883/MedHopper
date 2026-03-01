@@ -69,7 +69,7 @@ python MedHop_ablate.py --question "What gene is associated with Gorlin syndrome
 ### Run ablation studies
 
 ```bash
-python MedHop_ablate.py --csv questions.csv --ablations --seeds 42,43,44,45,46 --long_answers
+python MedHop_ablate.py --csv MedHopQA_Test_Dataset_matched.csv --ablations --seeds 42,43,44,45,46 --long_answers
 ```
 
 This generates separate CSV outputs for each ablation configuration with different seeds.
@@ -77,7 +77,7 @@ This generates separate CSV outputs for each ablation configuration with differe
 ### Enable long answers with Wikipedia links
 
 ```bash
-python MedHop_ablate.py --csv questions.csv --long_answers
+python MedHop_ablate.py --csv MedHopQA_Test_Dataset_matched.csv --long_answers
 ```
 
 ## Orphanet Integration
