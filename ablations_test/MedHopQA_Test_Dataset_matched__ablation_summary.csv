@@ -1,0 +1,6 @@
+ablation,seed,n,output_csv,full_pipeline,repair_enabled,disable_generic_filter,disable_kind_validation,disable_grounding_validation,disable_self_reference,orpha_expansion_on,orpha_gene_hints_on,orpha_expansion_max,orpha_max_orpha_hits,orpha_max_genes_per_disorder,retrieve_k,mmr_lambda,rerank_on,rerank_topn,long_answers
+orpha_expansion_cap5,42,1000,ablations_test/MedHopQA_Test_Dataset_matched__orpha_expansion_cap5__seed42.csv,True,True,False,False,False,False,True,True,5,3,10,90,0.6,True,20,True
+orpha_expansion_cap20,42,1000,ablations_test/MedHopQA_Test_Dataset_matched__orpha_expansion_cap20__seed42.csv,True,True,False,False,False,False,True,True,20,3,10,90,0.6,True,20,True
+rerank_off,42,1000,ablations_test/MedHopQA_Test_Dataset_matched__rerank_off__seed42.csv,True,True,False,False,False,False,True,True,10,3,10,90,0.6,False,20,True
+rerank_topn_10,42,1000,ablations_test/MedHopQA_Test_Dataset_matched__rerank_topn_10__seed42.csv,True,True,False,False,False,False,True,True,10,3,10,90,0.6,True,10,True
+rerank_topn_30,42,1000,ablations_test/MedHopQA_Test_Dataset_matched__rerank_topn_30__seed42.csv,True,True,False,False,False,False,True,True,10,3,10,90,0.6,True,30,True
