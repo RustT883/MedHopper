@@ -1,25 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""
-MedHopQA Agentic RAG System (LangGraph + Chroma + Flashrank) with:
-- Orphanet entity expansion (disease label -> ORPHAcode -> aliases/genes)
-- FIXES already in your current code:
-  * Corrected yes/no question detection (excludes "how" questions)
-  * Generic answer filtering (prevents "Press", "Chromosome" alone)
-  * Better multihop entity validation
-  * Reduced Orphanet noise
-  * Fixed answer kind prompts for specificity
-  * Intent-steered retrieval for medical_specialist/procedure
-  * Grounding judge checks relation to question
-  * Repair query intent constraints for specialist/procedure
-
-ADDITIONS (opt-in; does NOT change default behavior):
-- Ablation runner with 5 seeds per ablation, outputs separate CSVs
-- Single-pass baseline mode (retrieve once, answer once, no hops, no repair)
-- Optional LongAnswer column containing links to retrieved Wikipedia titles
-"""
-
 import logging
 logging.getLogger("httpx").setLevel(logging.WARNING)
 logging.getLogger("httpcore").setLevel(logging.WARNING)
