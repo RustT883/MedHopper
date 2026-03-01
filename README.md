@@ -141,7 +141,7 @@ TRACE_LLM_CALLS = True
 
 ## License
 
-Copyright (C) 2026 Yoshimasa Niwa
+Copyright (C) 2026 Rustam R. Taktashov
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
